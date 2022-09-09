@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="cv.css" />
+    <!-- Bootstrap Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- title -->
+    <title>Sayan</title>
+
+    <script src="cv.js"></script>
+  </head>
+
+  <body>
+    <!-- Nav Bar -->
+    <nav class="navi">
+      <h1 class="logo">Sayan</h1>
+      <ul class="nav_ul">
+        <li class="nav_li"><a class="navbar-brand" href="#bio">Bio</a></li>
+        <li class="nav_li">
+          <a class="navbar-brand" href="#skills">Skills</a>
+        </li>
+        <li class="nav_li">
+          <a class="navbar-brand" href="#educations">Education</a>
+        </li>
+        <li class="nav_li">
+          <a class="navbar-brand" href="#myprojects">My Projects</a>
+        </li>
+        <li class="nav_li">
+          <a class="navbar-brand" href="#contactme">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Heading -->
+    <div class="heading">
+      <p>Hi ! There,</p>
+      <p>My name is Sayan De..</p>
+    </div>
+
+    <!-- <img style="position: absolute; border-radius: 40%; background-color: black;" src="My project.png" alt="Avatar" style="width:200px"> -->
+
+    <!-- Gradient -->
+    <canvas id="gradient-canvas"> </canvas>
+    <script>
+      var gradient = new Gradient();
+      gradient.initGradient("#gradient-canvas");
+    </script>
+
+    <!-- Bio -->
+    <div id="bio">
+      <p style="font-size: 20px">
+        My name is Sayan De and I am from Kolkata, India.This is my Portfolio
+        Website . I love Coding and my major interests is in Coding, Open
+        Source, DevOps, Development etc.
+      </p>
+      <p style="font-size: 20px">
+        Looking for a challenging role in a reputable organization to use my
+        skills and knowledge. Being a fast learner, I would like to learn and
+        earn in order to meet the common objectives of the organization as a
+        whole by utilizing a positive approach in everything that I do.
+      </p>
+    </div>
+
+    <div id="skills" style="margin-left: 2%">
+      <h1>My Knowledge & Skills</h1>
+      <div class="row">
+        <div class="col-lg-4">
+          <h3 class="title" style="text-align: center">Languages</h3>
+          <ol type="1">
+            <li><i class="bi bi-filetype-html"></i>Java</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>TypeScript</li>
+            <li>SQL</li>
+          </ol>
+        </div>
+        <div class="col-lg-4">
+          <h3 class="title" style="text-align: center">Tools and Frameworks</h3>
+          <ol type="1">
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Bootstrap</li>
+            <li>ReactJs</li>
+            <li>NodeJs</li>
+            <li>Express Js</li>
+            <li>MongoDB</li>
+            <li>Spring Boot</li>
+            <li>Docker</li>
+          </ol>
+        </div>
+        <div class="col-lg-4">
+          <h3 class="title" style="text-align: center">Computer Subjects</h3>
+          <ol type="1">
+            <li>Data Structures</li>
+            <li>Algorithms</li>
+            <li>Software Engineering</li>
+            <li>Database Management System (DBMS)</li>
+            <li>Operating System</li>
+            <li>Computer Networks</li>
+            <li>Cloud Computing</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div id="educations" style="margin-left: 2%">
+      <h1>My Education</h1>
+      <ol type="1">
+        <li>Future Institute of Engineering and Management</li>
+        <ul>
+          Bachelors's in Computer Application
+        </ul>
+        <li>St. Joseph & Mary's School</li>
+        <li>Gurukul Vidya Mandir Secondary School</li>
+        <li>De Nobili School, Maithon</li>
+      </ol>
+    </div>
+
+    <div id="myprojects" style="margin-left: 2%">
+      <h1>My Projects</h1>
+    </div>
+
+    <div id="contactme">
+      <h1 style="text-align: center">Contacts Me</h1>
+      <div style="margin-left: 35%">
+        <button
+          type="button"
+          class="btn lg bi bi-github"
+          style="font-size: 39px"
+          onclick="window.location.href = 'https://github.com/sayande2002';"
+        ></button>
+        <button
+          type="button"
+          class="btn bi bi-instagram"
+          style="font-size: 39px"
+          onclick="window.location.href = 'https://www.instagram.com/sayande._/';"
+        ></button>
+        <button
+          type="button"
+          class="btn bi bi-envelope-fill"
+          style="font-size: 39px"
+          onclick="window.location.href = 'href=mailto:sayandeten@gmail.com';"
+        ></button>
+        <button
+          type="button"
+          class="btn bi bi-twitter"
+          style="font-size: 39px"
+          onclick="window.location.href = 'https://twitter.com/sayande2002';"
+        ></button>
+        <button
+          type="button"
+          class="btn bi bi-linkedin"
+          style="font-size: 39px"
+          onclick="window.location.href = 'https://www.instagram.com/sayande._/';"
+        ></button>
+        <button
+          type="button"
+          class="btn bi bi-facebook"
+          style="font-size: 39px"
+          onclick="window.location.href = 'https://www.instagram.com/sayande._/';"
+        ></button>
+      </div>
+    </div>
+
+    <footer style="padding-top: 50px">
+      <table style="width: 100%">
+        <tr>
+          <th><h5>© 2022 All rights reserved.</h5></th>
+          <th>
+            <h5 style="margin-left: 55%">
+              Developed and Maintained by
+              <a href="https://github.com/sayande2002">Sayan De</a>
+            </h5>
+          </th>
+        </tr>
+        <tr></tr>
+      </table>
+    </footer>
+  </body>
+</html>
