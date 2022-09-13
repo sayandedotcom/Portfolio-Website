@@ -23,6 +23,12 @@
     />
     <!-- title -->
     <title>Sayan</title>
+    <link
+      id="favicon"
+      rel="shortcut icon"
+      href="./assets/My project-removebg-preview.jpg"
+      type="image/x-png"
+    />
 
     <script src="cv.js"></script>
   </head>
@@ -32,7 +38,9 @@
     <nav class="navi">
       <h1 class="logo">Sayan</h1>
       <ul class="nav_ul">
-        <li class="nav_li"><a class="navbar-brand" href="#bio">Bio</a></li>
+        <li class="nav_li">
+          <a class="navbar-brand" href="#about">About</a>
+        </li>
         <li class="nav_li">
           <a class="navbar-brand" href="#skills">Skills</a>
         </li>
@@ -40,21 +48,69 @@
           <a class="navbar-brand" href="#educations">Education</a>
         </li>
         <li class="nav_li">
-          <a class="navbar-brand" href="#myprojects">My Projects</a>
+          <a class="navbar-brand" href="#myprojects">Projects</a>
         </li>
         <li class="nav_li">
-          <a class="navbar-brand" href="#contactme">Contact Me</a>
+          <a class="navbar-brand" href="#contactme">Contact</a>
         </li>
       </ul>
     </nav>
 
-    <!-- Heading -->
-    <div class="heading">
-      <p>Hi ! There,</p>
-      <p>My name is Sayan De..</p>
-    </div>
+    <!-- Nav Bar Ends -->
 
-    <!-- <img style="position: absolute; border-radius: 40%; background-color: black;" src="My project.png" alt="Avatar" style="width:200px"> -->
+    <!-- Home Starts -->
+
+    <section id="home" class="heading">
+      <div class="row">
+        <div class="col-lg-8">
+          <p>
+            Hi ! There,<br />
+            I'am Sayan De<br />
+            Welcome to my Website
+          </p>
+        </div>
+        <div class="col-lg-4" style="padding-top: 6.5%">
+          <!-- <img
+            class="photo"
+            style="position: absolute"
+            src="/assets/My project-removebg-preview.jpg"
+            alt="Avatar"
+            width="100"
+            height="100"
+          /> -->
+          <i
+            class="bi bi-github"
+            style="font-size: 39px; cursor: pointer"
+            onclick="window.location.href = 'https://github.com/sayande2002';"
+          ></i>
+          <i
+            class="bi bi-instagram"
+            style="font-size: 39px; cursor: pointer"
+            onclick="window.location.href = 'https://github.com/sayande2002';"
+          ></i>
+          <i
+            class="bi bi-twitter"
+            style="font-size: 39px; cursor: pointer"
+            onclick="window.location.href = 'https://github.com/sayande2002';"
+          ></i>
+          <i
+            class="bi bi-linkedin"
+            style="font-size: 39px; cursor: pointer"
+            onclick="window.location.href = 'https://github.com/sayande2002';"
+          ></i>
+          <i
+            class="bi bi-facebook"
+            style="font-size: 39px; cursor: pointer"
+            onclick="window.location.href = 'https://github.com/sayande2002';"
+          ></i>
+          <i
+            class="bi bi-envelope-fill"
+            style="font-size: 39px; cursor: pointer"
+            onclick="window.location.href = 'https://github.com/sayande2002';"
+          ></i>
+        </div>
+      </div>
+    </section>
 
     <!-- Gradient -->
     <canvas id="gradient-canvas"> </canvas>
@@ -63,23 +119,47 @@
       gradient.initGradient("#gradient-canvas");
     </script>
 
-    <!-- Bio -->
-    <div id="bio">
-      <p style="font-size: 20px">
-        My name is Sayan De and I am from Kolkata, India.This is my Portfolio
-        Website . I love Coding and my major interests is in Coding, Open
-        Source, DevOps, Development etc.
-      </p>
-      <p style="font-size: 20px">
-        Looking for a challenging role in a reputable organization to use my
-        skills and knowledge. Being a fast learner, I would like to learn and
-        earn in order to meet the common objectives of the organization as a
-        whole by utilizing a positive approach in everything that I do.
-      </p>
-    </div>
+    <!-- Home Ends -->
 
-    <div id="skills" style="margin-left: 2%">
-      <h1>My Knowledge & Skills</h1>
+    <!-- About Starts -->
+    <section id="about">
+      <h2 class="about-heading">About Me</h2>
+      <div class="row" style="padding: 150px">
+        <div class="col-lg-6" style="margin-left: 10%">
+          <p style="font-size: 20px">
+            My name is Sayan De and I am from Kolkata, India.This is my
+            Portfolio Website . I love Coding and my major interests is in
+            Coding, Open Source, DevOps, Development etc.<br />
+
+            Looking for a challenging role in a reputable organization to use my
+            skills and knowledge. Being a fast learner, I would like to learn
+            and earn in order to meet the common objectives of the organization
+            as a whole by utilizing a positive approach in everything that I
+            do.<br />
+          </p>
+          <button type="button" class="btn btn-primary btn-lg">Resume</button>
+        </div>
+        <div class="col-lg-2" style="padding-left: 80px">
+          <img
+            class="photo"
+            style="position: absolute"
+            src="/assets/My project-removebg-preview.jpg"
+            alt="Avatar"
+            width="250"
+            height="300"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Ends -->
+
+    <!-- Skills Starts-->
+    <section id="skills" style="margin-left: 2%">
+      <h1 style="text-align: center">
+        <i class="bi bi-code"></i> Skills & Knowledge
+        <i class="bi bi-code-slash"></i>
+      </h1>
       <div class="row">
         <div class="col-lg-4">
           <h3 class="title" style="text-align: center">Languages</h3>
@@ -122,80 +202,161 @@
           </ol>
         </div>
       </div>
-    </div>
+    </section>
+    <!-- Skills Ends -->
 
-    <div id="educations" style="margin-left: 2%">
-      <h1>My Education</h1>
-      <ol type="1">
-        <li>Future Institute of Engineering and Management</li>
-        <ul>
-          Bachelors's in Computer Application
-        </ul>
-        <li>St. Joseph & Mary's School</li>
-        <li>Gurukul Vidya Mandir Secondary School</li>
-        <li>De Nobili School, Maithon</li>
-      </ol>
-    </div>
+    <!-- Educations Starts -->
+    <section id="educations">
+      <h1 style="text-align: center">
+        <i class="bi bi-mortarboard-fill"></i> My Education
+      </h1>
+      <p style="text-align: center">
+        Education Is Not The Learning Of Facts, But The Training Of The Mind To
+        Think.
+      </p>
 
-    <div id="myprojects" style="margin-left: 2%">
-      <h1>My Projects</h1>
-    </div>
+      <div class="education-cards">
+        <div class="card mb-3" style="max-width: 1940px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/fiem.jpg"
+                class="img-fluid rounded-start"
+                alt="..."
+                width="100%"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h2 class="card-title">Bachelors's in Computer Application</h2>
+                <h5 class="card-text">
+                  Future Institute of Engineering and Management, Kolkata, West
+                  Bengal.
+                </h5>
+                <h5 class="card-text">
+                  <small class="text-muted">2020 - 2023</small>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <div id="contactme">
-      <h1 style="text-align: center">Contacts Me</h1>
-      <div style="margin-left: 35%">
-        <button
-          type="button"
-          class="btn lg bi bi-github"
-          style="font-size: 39px"
-          onclick="window.location.href = 'https://github.com/sayande2002';"
-        ></button>
-        <button
-          type="button"
-          class="btn bi bi-instagram"
-          style="font-size: 39px"
-          onclick="window.location.href = 'https://www.instagram.com/sayande._/';"
-        ></button>
-        <button
-          type="button"
-          class="btn bi bi-envelope-fill"
-          style="font-size: 39px"
-          onclick="window.location.href = 'href=mailto:sayandeten@gmail.com';"
-        ></button>
-        <button
-          type="button"
-          class="btn bi bi-twitter"
-          style="font-size: 39px"
-          onclick="window.location.href = 'https://twitter.com/sayande2002';"
-        ></button>
-        <button
-          type="button"
-          class="btn bi bi-linkedin"
-          style="font-size: 39px"
-          onclick="window.location.href = 'https://www.instagram.com/sayande._/';"
-        ></button>
-        <button
-          type="button"
-          class="btn bi bi-facebook"
-          style="font-size: 39px"
-          onclick="window.location.href = 'https://www.instagram.com/sayande._/';"
-        ></button>
+        <div class="card mb-3" style="max-width: 1540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="assets/jsam.jpg"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h2 class="card-title">High School | Science</h2>
+                <h5 class="card-text">
+                  St. Joseph & Mary's School, Kolkata, West Bengal.
+                </h5>
+                <h5 class="card-text">
+                  <small class="text-muted">2018 - 2020</small>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <footer style="padding-top: 50px">
-      <table style="width: 100%">
-        <tr>
-          <th><h5>© 2022 All rights reserved.</h5></th>
-          <th>
-            <h5 style="margin-left: 55%">
-              Developed and Maintained by
-              <a href="https://github.com/sayande2002">Sayan De</a>
-            </h5>
-          </th>
-        </tr>
-        <tr></tr>
-      </table>
+    <!-- Educations Ends -->
+
+    <!-- Projects Starts -->
+    <section id="projects" style="margin-left: 2%">
+      <h1 style="text-align: center">
+        <i class="bi bi-terminal-fill"></i> My Projects
+      </h1>
+    </section>
+    <!-- Projects Ends -->
+
+    <!-- contact me starts -->
+    <footer class="contactalign">
+      <section id="contactme">
+        <h1 style="text-align: center">
+          <i class="bi bi-person-lines-fill"></i> Contacts Me
+        </h1>
+        <div class="row">
+          <div class="col-lg-4">
+            <h3 class="title">Sayan's Portfolio</h3>
+            <p>
+              Thank you for visiting my personal portfolio website. Connect with
+              me over socials.Please wait for a while all major projects will be
+              listed soon. Till then keep visiting. Connect with me over live
+              chat!
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <h3 class="title">Quick Links</h3>
+
+            <a href="#home" style="color: black"
+              ><i class="bi bi-arrow-right-circle-fill"></i>Home</a
+            ><br />
+            <a href="#about" style="color: black"
+              ><i class="bi bi-arrow-right-circle-fill"></i>About</a
+            ><br />
+            <a href="#skills" style="color: black"
+              ><i class="bi bi-arrow-right-circle-fill"></i>Skills</a
+            ><br />
+            <a href="#educations" style="color: black"
+              ><i class="bi bi-arrow-right-circle-fill"></i>Educations</a
+            ><br />
+            <a href="#projects" style="color: black"
+              ><i class="bi bi-arrow-right-circle-fill"></i>Projects</a
+            ><br />
+          </div>
+          <div class="col-lg-4">
+            <h3 class="title">Contact Info</h3>
+            <p><i class="bi bi-envelope-fill"></i> sayandeten@gmail.com</p>
+
+            <p>
+              <i class="bi bi-geo-alt-fill"></i> Kolkata, West Bengal 700-061
+            </p>
+
+            <i
+              class="bi bi-github"
+              style="font-size: 39px; cursor: pointer"
+              onclick="window.location.href = 'https://github.com/sayande2002';"
+            ></i>
+
+            <i
+              class="bi bi-instagram"
+              style="font-size: 39px; cursor: pointer"
+              onclick="window.location.href = 'https://github.com/sayande2002';"
+            ></i>
+            <i
+              class="bi bi-twitter"
+              style="font-size: 39px; cursor: pointer"
+              onclick="window.location.href = 'https://github.com/sayande2002';"
+            ></i>
+            <i
+              class="bi bi-linkedin"
+              style="font-size: 39px; cursor: pointer"
+              onclick="window.location.href = 'https://github.com/sayande2002';"
+            ></i>
+            <i
+              class="bi bi-facebook"
+              style="font-size: 39px; cursor: pointer"
+              onclick="window.location.href = 'https://github.com/sayande2002';"
+            ></i>
+            <i
+              class="bi bi-envelope-fill"
+              style="font-size: 39px; cursor: pointer"
+              onclick="window.location.href = 'https://github.com/sayande2002';"
+            ></i>
+          </div>
+        </div>
+      </section>
+      <h5 style="text-align: center">
+        Developed and Mantained By
+        <a href="https://github.com/sayande2002">Sayan De</a>
+      </h5>
     </footer>
   </body>
 </html>

@@ -8,6 +8,8 @@ body {
   /* overflow: hidden; */
 }
 
+/* Heading Starts */
+
 #gradient-canvas {
   width: 100%;
   height: 100%;
@@ -20,20 +22,26 @@ body {
 }
 
 .heading {
-  font-family: sohne-var, "Helvetica Neue", Arial, sans-serif;
-  font-weight: 800;
+  /* font-family: sohne-var, "Helvetica Neue", Arial, sans-serif; */
+  font-weight: 700;
   font-size: 4rem;
   color: #343434;
   position: absolute;
-  padding: 2rem;
-  /* top: 0px; */
-  z-index: 100;
-  /* text-align: center; */
-  /* width: 100%; */
-  mix-blend-mode: difference;
+  /* padding: 4rem; */
+  /* margin-bottom: 0ch */
+  z-index: 1;
+  width: 100%;
+  /* mix-blend-mode: difference; */
   top: 20%;
+  padding-left: 5%;
+  padding-right: 5%;
+  /* margin: 10% 5% 0% 5%; */
+  /* margin-right: 5%; */
 }
 
+/* Heading Ends */
+
+/* navbar starts */
 .logo {
   position: absolute;
   /* padding-bottom: 10px; */
@@ -57,3 +65,45 @@ body {
   padding: 15px;
   font-weight: 600;
 }
+/* navbar ends */
+
+/* about starts*/
+.about {
+  width: 100%;
+  height: 100%;
+}
+.about-heading {
+  /* background-color: #7038ff; */
+  text-align: center;
+}
+.photo {
+  margin-left: 10px;
+}
+/* about ends */
+
+/* skill starts */
+
+/* skill ends */
+
+/* Educations Starts */
+#educations {
+  background-color: #bce2f8;
+}
+.education-cards {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 2%;
+}
+
+/* Educations Ends */
+
+/* Contact :start */
+
+.contactalign {
+  /* padding-left: 5%;
+  padding-left: 5%; */
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* Contact ends */
