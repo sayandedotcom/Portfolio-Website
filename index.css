@@ -69,25 +69,52 @@ body {
 
 /* about starts*/
 .about {
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
+  padding: 1.3%;
+  background-color: beige;
 }
 .about-heading {
   /* background-color: #7038ff; */
   text-align: center;
 }
-.photo {
+/* .photo {
   margin-left: 10px;
+} */
+.about-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-row {
+  padding: 1.1% 11%;
+  font-size: 20px;
+}
+.about-column {
+  padding: 2%;
 }
 /* about ends */
 
 /* skill starts */
+.skills {
+  font-family: "Lucida Console", "Courier New", monospace;
+  background-color: rgba(126, 42, 245, 0.69);
+  padding: 1.3%;
+}
+.lists {
+  display: flex;
+  padding: 0.5rem;
+}
 
+.ski-name {
+  width: 100%;
+}
 /* skill ends */
 
 /* Educations Starts */
-#educations {
-  background-color: #bce2f8;
+.educations {
+  padding: 1.3%;
+  background-color: #8fd6ff;
 }
 .education-cards {
   margin-left: 15%;
@@ -97,13 +124,62 @@ body {
 
 /* Educations Ends */
 
+/* Projects Starts */
+.projects {
+  padding: 1.3%;
+  background-color: #df8fbf;
+}
+
+.projects-img {
+  position: relative;
+  /* width: 50%; */
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.projects-img:hover .image {
+  opacity: 0.3;
+}
+
+.projects-img:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #000000;
+  color: white;
+  font-size: 16px;
+  padding: 10px 30px;
+  margin: 4px 2px;
+  border-radius: 16px;
+}
+/* Projects Ends */
+
 /* Contact :start */
 
 .contactalign {
-  /* padding-left: 5%;
-  padding-left: 5%; */
-  margin-left: 5%;
-  margin-right: 5%;
+  padding: 1.3% 10% 0% 10%;
+}
+a:link {
+  text-decoration: none;
 }
 
 /* Contact ends */
