@@ -72,11 +72,25 @@ body {
   /* width: 100%;
   height: 100%; */
   padding: 1.3%;
-  background-color: beige;
+  /* background-color: beige; */
+  background: #abbaab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #ffffff,
+    #abbaab
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #ffffff,
+    #abbaab
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-weight: bolder;
 }
 .about-heading {
   /* background-color: #7038ff; */
   text-align: center;
+  font-weight: bolder;
 }
 /* .photo {
   margin-left: 10px;
@@ -91,15 +105,30 @@ body {
   font-size: 20px;
 }
 .about-column {
-  padding: 2%;
+  padding: 1.5%;
 }
 /* about ends */
 
 /* skill starts */
 .skills {
   font-family: "Lucida Console", "Courier New", monospace;
-  background-color: rgba(126, 42, 245, 0.69);
+  /* background-color: rgba(104, 22, 219, 0.69); */
+  /* background-color: linear-gradient(90deg, rgb(57, 54, 231), rgb(153, 83, 238)); */
+  background: #8e2de2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #4a00e0,
+    #8e2de2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #4a00e0,
+    #8e2de2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   padding: 1.3%;
+  color: aliceblue;
+  font-weight: 1000;
 }
 .lists {
   display: flex;
@@ -113,8 +142,21 @@ body {
 
 /* Educations Starts */
 .educations {
-  padding: 1.3%;
-  background-color: #8fd6ff;
+  padding: 2%;
+  /* background-color: #8fd6ff; */
+  background: #1fa2ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #a6ffcb,
+    #12d8fa,
+    #1fa2ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #a6ffcb,
+    #12d8fa,
+    #1fa2ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .education-cards {
   margin-left: 15%;
@@ -126,8 +168,25 @@ body {
 
 /* Projects Starts */
 .projects {
-  padding: 1.3%;
-  background-color: #df8fbf;
+  padding: 2%;
+  /* background-color: #df8fbf;
+  background: #7F7FD5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.projects-row {
+  padding: 2%;
 }
 
 .projects-img {
@@ -177,6 +236,17 @@ body {
 
 .contactalign {
   padding: 1.3% 10% 0% 10%;
+  background: #d3cce3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #e9e4f0,
+    #d3cce3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #e9e4f0,
+    #d3cce3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 a:link {
   text-decoration: none;
